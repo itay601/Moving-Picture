@@ -1,0 +1,7 @@
+C:\MyProjects\Moving-Picture\FallingPictureWindowsForms\bin\Debug\FallingPictureWindowsForms.exe.config
+C:\MyProjects\Moving-Picture\FallingPictureWindowsForms\bin\Debug\FallingPictureWindowsForms.exe
+C:\MyProjects\Moving-Picture\FallingPictureWindowsForms\bin\Debug\FallingPictureWindowsForms.pdb
+C:\MyProjects\Moving-Picture\FallingPictureWindowsForms\obj\Debug\FallingPictureWindowsForms.csproj.AssemblyReference.cache
+C:\MyProjects\Moving-Picture\FallingPictureWindowsForms\obj\Debug\FallingPictureWindowsForms.csproj.CoreCompileInputs.cache
+C:\MyProjects\Moving-Picture\FallingPictureWindowsForms\obj\Debug\FallingPictureWindowsForms.exe
+C:\MyProjects\Moving-Picture\FallingPictureWindowsForms\obj\Debug\FallingPictureWindowsForms.pdb
