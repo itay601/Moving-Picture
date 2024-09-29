@@ -6,12 +6,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace FallingPictureWindowsForms
 {
     class MyForm : Form
     {
         private Button m_ButtonStart;
         private Random m_Random = new Random();
+        Timer m_PictureFallTimer = new Timer();
+
+        private List<PictureBox> m_fallPictureBox=new List<PictureBox>();
         public MyForm()
         {
             this.FormSetup();
@@ -56,15 +61,32 @@ namespace FallingPictureWindowsForms
             pictureBox.Left= location - 20;
             pictureBox.Top = location - 20;
             pictureBox.Click += PictureBox_Click;
-            //pictureBox.Click += new ElventHandler(PictureBox_Click);
             pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox.Load(@"C:\Users\itay\Videos\Captures\kali-moto.jpg");
             this.Controls.Add(pictureBox);
+            //Timer for PictureBox
+            this.m_PictureFallTimer.Interval = 100;
+            this.m_PictureFallTimer.Tick += M_PictureFallTimer_Tick;
+        }
+
+        private void M_PictureFallTimer_Tick(object sender, EventArgs e)
+        {
+            PictureBox pictureBox;
+            for(int i=0;i< m_fallPictureBox.Count(); i++)
+            {
+                pictureBox = this.m_fallPictureBox[i];
+                pictureBox.Top += 1;
+                if (pictureBox.Bottom >= this.ClientSize.Height)
+                {
+                    m_fallPictureBox.Remove(pictureBox);
+                }
+            }
         }
 
         private void PictureBox_Click(object sender, EventArgs e)
         {
-            (sender as PictureBox).Top -= 1;
+            this.m_fallPictureBox.Add(sender as PictureBox);
+            this.m_PictureFallTimer.Start();
         }
 
         private void Button_Click(object sender, EventArgs e)
@@ -87,8 +109,7 @@ namespace FallingPictureWindowsForms
 
         private void MyForm_LocationChanged(object sender, EventArgs e)
         {
-            //throw new NotImplementedException();
-
+            this.Text = this.Location.ToString();
         }
 
         public void ShowDialog_()
