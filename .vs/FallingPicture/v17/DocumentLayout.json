@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\MyProjects\\Moving-Picture\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A28D63D-00DA-406F-9603-6F5A482D0911}|FallingPictureWindowsForms\\FallingPictureWindowsForms.csproj|c:\\myprojects\\moving-picture\\fallingpicturewindowsforms\\myform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6A28D63D-00DA-406F-9603-6F5A482D0911}|FallingPictureWindowsForms\\FallingPictureWindowsForms.csproj|C:\\MyProjects\\Moving-Picture\\fallingpicturewindowsforms\\myform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A28D63D-00DA-406F-9603-6F5A482D0911}|FallingPictureWindowsForms\\FallingPictureWindowsForms.csproj|solutionrelative:fallingpicturewindowsforms\\myform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A28D63D-00DA-406F-9603-6F5A482D0911}|FallingPictureWindowsForms\\FallingPictureWindowsForms.csproj|C:\\MyProjects\\Moving-Picture\\fallingpicturewindowsforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A28D63D-00DA-406F-9603-6F5A482D0911}|FallingPictureWindowsForms\\FallingPictureWindowsForms.csproj|solutionrelative:fallingpicturewindowsforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A28D63D-00DA-406F-9603-6F5A482D0911}|FallingPictureWindowsForms\\FallingPictureWindowsForms.csproj|C:\\MyProjects\\Moving-Picture\\fallingpicturewindowsforms\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A28D63D-00DA-406F-9603-6F5A482D0911}|FallingPictureWindowsForms\\FallingPictureWindowsForms.csproj|solutionrelative:fallingpicturewindowsforms\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +30,29 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormLogin.cs",
+              "DocumentMoniker": "C:\\MyProjects\\Moving-Picture\\FallingPictureWindowsForms\\FormLogin.cs",
+              "RelativeDocumentMoniker": "FallingPictureWindowsForms\\FormLogin.cs",
+              "ToolTip": "C:\\MyProjects\\Moving-Picture\\FallingPictureWindowsForms\\FormLogin.cs",
+              "RelativeToolTip": "FallingPictureWindowsForms\\FormLogin.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T11:32:16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MyForm.cs",
               "DocumentMoniker": "C:\\MyProjects\\Moving-Picture\\FallingPictureWindowsForms\\MyForm.cs",
               "RelativeDocumentMoniker": "FallingPictureWindowsForms\\MyForm.cs",
               "ToolTip": "C:\\MyProjects\\Moving-Picture\\FallingPictureWindowsForms\\MyForm.cs",
               "RelativeToolTip": "FallingPictureWindowsForms\\MyForm.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAIwEwAAAA2AAAA",
+              "ViewState": "AQIAADgAAAAAAAAAAAAYwEcAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-28T05:57:46.407Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\MyProjects\\Moving-Picture\\FallingPictureWindowsForms\\Program.cs",
-              "RelativeDocumentMoniker": "FallingPictureWindowsForms\\Program.cs",
-              "ToolTip": "C:\\MyProjects\\Moving-Picture\\FallingPictureWindowsForms\\Program.cs",
-              "RelativeToolTip": "FallingPictureWindowsForms\\Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T14:52:41.426Z"
             }
           ]
         }
