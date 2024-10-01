@@ -15,8 +15,9 @@ namespace FallingPictureWindowsForms
         private Button m_ButtonStart;
         private Random m_Random = new Random();
         Timer m_PictureFallTimer = new Timer();
-
         private List<PictureBox> m_fallPictureBox=new List<PictureBox>();
+        private Button m_ButtonLogin;
+        private bool m_isLogin = false;
         public MyForm()
         {
             this.FormSetup();
@@ -34,14 +35,46 @@ namespace FallingPictureWindowsForms
             m_ButtonStart.Text = this.Text;
             m_ButtonStart.BackColor = Color.Yellow;
             m_ButtonStart.Click += M_ButtonStart_Click;
-            this.Controls.Add(m_ButtonStart);   
+            this.Controls.Add(m_ButtonStart);
+            m_ButtonLogin = new Button();
+            m_ButtonLogin.Text = "Login";
+            m_ButtonLogin.BackColor = Color.FromArgb(100,100,0);
+            m_ButtonLogin.Location = new Point(0, 30);
+            m_ButtonLogin.Click += M_ButtonLogin_Click;
+            this.Controls.Add(m_ButtonLogin);
+        }
+
+        private void M_ButtonLogin_Click(object sender, EventArgs e)
+        {
+            FormLogin formLogin = new FormLogin();
+            formLogin.StartPosition = FormStartPosition.CenterScreen;
+            formLogin.ShowDialog();
         }
 
         private void M_ButtonStart_Click(object sender, EventArgs e)
         {
-            CreateRandomButtons();
+            if (CheckLogedIn())
+            {
+                CreateRandomButtons();
+            }
         }
-
+        private bool CheckLogedIn()
+        {
+            if (!m_isLogin)
+            {
+                FormLogin formLogin = new FormLogin();
+                formLogin.StartPosition = FormStartPosition.CenterScreen;
+                formLogin.ShowDialog();
+                if (formLogin.ClosedByLogin)
+                {
+                    if (Authentication.CheckUserCredentials(formLogin.TextBoxUsername, formLogin.TextBoxPassword))
+                    {
+                        m_isLogin = true;
+                    }
+                }
+            }
+            return m_isLogin;
+        }
         private void CreateRandomButtons()
         {
             //button
@@ -68,7 +101,6 @@ namespace FallingPictureWindowsForms
             this.m_PictureFallTimer.Interval = 100;
             this.m_PictureFallTimer.Tick += M_PictureFallTimer_Tick;
         }
-
         private void M_PictureFallTimer_Tick(object sender, EventArgs e)
         {
             PictureBox pictureBox;
@@ -82,13 +114,11 @@ namespace FallingPictureWindowsForms
                 }
             }
         }
-
         private void PictureBox_Click(object sender, EventArgs e)
         {
             this.m_fallPictureBox.Add(sender as PictureBox);
             this.m_PictureFallTimer.Start();
         }
-
         private void Button_Click(object sender, EventArgs e)
         {
             (sender as Button).Left += 10;  
@@ -96,27 +126,21 @@ namespace FallingPictureWindowsForms
             (sender as Button).Click += Button_SecondClick;
 
         }
-
         private void Button_SecondClick(object sender, EventArgs e)
         {
             (sender as Button).Left -= 10;
         }
-
         private void MyForm_SizeChanged(object sender, EventArgs e)
         {
             (sender as Form).Text = this.Size.ToString();
         }
-
         private void MyForm_LocationChanged(object sender, EventArgs e)
         {
             this.Text = this.Location.ToString();
         }
-
         public void ShowDialog_()
         {
             this.ShowDialog();
         }
-
-
     }
 }
