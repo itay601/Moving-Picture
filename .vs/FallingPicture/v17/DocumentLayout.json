@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\MyProjects\\Moving-Picture\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A28D63D-00DA-406F-9603-6F5A482D0911}|FallingPictureWindowsForms\\FallingPictureWindowsForms.csproj|C:\\MyProjects\\Moving-Picture\\fallingpicturewindowsforms\\myform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A28D63D-00DA-406F-9603-6F5A482D0911}|FallingPictureWindowsForms\\FallingPictureWindowsForms.csproj|solutionrelative:fallingpicturewindowsforms\\myform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A28D63D-00DA-406F-9603-6F5A482D0911}|FallingPictureWindowsForms\\FallingPictureWindowsForms.csproj|c:\\myprojects\\moving-picture\\fallingpicturewindowsforms\\othelo\\controllergame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A28D63D-00DA-406F-9603-6F5A482D0911}|FallingPictureWindowsForms\\FallingPictureWindowsForms.csproj|solutionrelative:fallingpicturewindowsforms\\othelo\\controllergame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A28D63D-00DA-406F-9603-6F5A482D0911}|FallingPictureWindowsForms\\FallingPictureWindowsForms.csproj|C:\\MyProjects\\Moving-Picture\\fallingpicturewindowsforms\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A28D63D-00DA-406F-9603-6F5A482D0911}|FallingPictureWindowsForms\\FallingPictureWindowsForms.csproj|solutionrelative:fallingpicturewindowsforms\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A28D63D-00DA-406F-9603-6F5A482D0911}|FallingPictureWindowsForms\\FallingPictureWindowsForms.csproj|c:\\myprojects\\moving-picture\\fallingpicturewindowsforms\\otheloform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A28D63D-00DA-406F-9603-6F5A482D0911}|FallingPictureWindowsForms\\FallingPictureWindowsForms.csproj|solutionrelative:fallingpicturewindowsforms\\otheloform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A28D63D-00DA-406F-9603-6F5A482D0911}|FallingPictureWindowsForms\\FallingPictureWindowsForms.csproj|c:\\myprojects\\moving-picture\\fallingpicturewindowsforms\\otheloui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A28D63D-00DA-406F-9603-6F5A482D0911}|FallingPictureWindowsForms\\FallingPictureWindowsForms.csproj|solutionrelative:fallingpicturewindowsforms\\otheloui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +22,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OtheloForm.cs",
+              "DocumentMoniker": "C:\\MyProjects\\Moving-Picture\\FallingPictureWindowsForms\\OtheloForm.cs",
+              "RelativeDocumentMoniker": "FallingPictureWindowsForms\\OtheloForm.cs",
+              "ToolTip": "C:\\MyProjects\\Moving-Picture\\FallingPictureWindowsForms\\OtheloForm.cs",
+              "RelativeToolTip": "FallingPictureWindowsForms\\OtheloForm.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAwwGwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T07:23:19.366Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -30,28 +48,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormLogin.cs",
-              "DocumentMoniker": "C:\\MyProjects\\Moving-Picture\\FallingPictureWindowsForms\\FormLogin.cs",
-              "RelativeDocumentMoniker": "FallingPictureWindowsForms\\FormLogin.cs",
-              "ToolTip": "C:\\MyProjects\\Moving-Picture\\FallingPictureWindowsForms\\FormLogin.cs",
-              "RelativeToolTip": "FallingPictureWindowsForms\\FormLogin.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBkAAAAvAAAA",
+              "DocumentIndex": 2,
+              "Title": "OtheloUI.cs",
+              "DocumentMoniker": "C:\\MyProjects\\Moving-Picture\\FallingPictureWindowsForms\\OtheloUI.cs",
+              "RelativeDocumentMoniker": "FallingPictureWindowsForms\\OtheloUI.cs",
+              "ToolTip": "C:\\MyProjects\\Moving-Picture\\FallingPictureWindowsForms\\OtheloUI.cs",
+              "RelativeToolTip": "FallingPictureWindowsForms\\OtheloUI.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAswFgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T11:32:16Z",
+              "WhenOpened": "2024-10-10T08:48:11.01Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MyForm.cs",
-              "DocumentMoniker": "C:\\MyProjects\\Moving-Picture\\FallingPictureWindowsForms\\MyForm.cs",
-              "RelativeDocumentMoniker": "FallingPictureWindowsForms\\MyForm.cs",
-              "ToolTip": "C:\\MyProjects\\Moving-Picture\\FallingPictureWindowsForms\\MyForm.cs",
-              "RelativeToolTip": "FallingPictureWindowsForms\\MyForm.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAYwEcAAAApAAAA",
+              "Title": "ControllerGame.cs",
+              "DocumentMoniker": "C:\\MyProjects\\Moving-Picture\\FallingPictureWindowsForms\\Othelo\\ControllerGame.cs",
+              "RelativeDocumentMoniker": "FallingPictureWindowsForms\\Othelo\\ControllerGame.cs",
+              "ToolTip": "C:\\MyProjects\\Moving-Picture\\FallingPictureWindowsForms\\Othelo\\ControllerGame.cs",
+              "RelativeToolTip": "FallingPictureWindowsForms\\Othelo\\ControllerGame.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAswC8AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T05:57:46.407Z",
+              "WhenOpened": "2024-10-10T08:31:36.135Z",
               "EditorCaption": ""
             }
           ]

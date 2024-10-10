@@ -46,6 +46,16 @@
     <Compile Include="MyForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="OtheloForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtheloUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Othelo\Board.cs" />
+    <Compile Include="Othelo\Cell.cs" />
+    <Compile Include="Othelo\ControllerGame.cs" />
+    <Compile Include="Othelo\Player.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
