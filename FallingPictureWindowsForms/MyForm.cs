@@ -18,6 +18,7 @@ namespace FallingPictureWindowsForms
         private List<PictureBox> m_fallPictureBox=new List<PictureBox>();
         private Button m_ButtonLogin;
         private bool m_isLogin = false;
+        private Button m_ButtonOthelloForm;
         public MyForm()
         {
             this.FormSetup();
@@ -29,19 +30,32 @@ namespace FallingPictureWindowsForms
             this.Location = new Point(0, 0);
             this.StartPosition = FormStartPosition.CenterScreen;
             this.LocationChanged += MyForm_LocationChanged;
-            this.BackColor = Color.FromArgb(23, 104, 177);
+            //this.BackColor = Color.FromArgb(23, 104, 177);
             this.SizeChanged += MyForm_SizeChanged;
             m_ButtonStart = new Button();
             m_ButtonStart.Text = this.Text;
-            m_ButtonStart.BackColor = Color.Yellow;
+            //m_ButtonStart.BackColor = Color.Yellow;
             m_ButtonStart.Click += M_ButtonStart_Click;
             this.Controls.Add(m_ButtonStart);
             m_ButtonLogin = new Button();
             m_ButtonLogin.Text = "Login";
-            m_ButtonLogin.BackColor = Color.FromArgb(100,100,0);
+            //m_ButtonLogin.BackColor = Color.FromArgb(100,100,0);
             m_ButtonLogin.Location = new Point(0, 30);
             m_ButtonLogin.Click += M_ButtonLogin_Click;
             this.Controls.Add(m_ButtonLogin);
+            //othelo game
+            m_ButtonOthelloForm = new Button();
+            m_ButtonOthelloForm.Text = "Othelo Game";
+            m_ButtonOthelloForm.Location = new Point(30, 60);
+            m_ButtonOthelloForm.Click += M_ButtonOthelloForm_Click;
+            this.Controls.Add(m_ButtonOthelloForm);
+        }
+
+        private void M_ButtonOthelloForm_Click(object sender, EventArgs e)
+        {
+            OthelloForm formOthelo = new OthelloForm();
+            formOthelo.StartPosition = FormStartPosition.CenterScreen;
+            formOthelo.ShowDialog();
         }
 
         private void M_ButtonLogin_Click(object sender, EventArgs e)
@@ -79,7 +93,7 @@ namespace FallingPictureWindowsForms
         {
             //button
             Button button = new Button();
-            button.BackColor = Color.Green;
+            //button.BackColor = Color.Green;
             button.Width = 110;
             int location = m_Random.Next(this.ClientSize.Width -  button.Width);
             button.Left = location;
@@ -88,7 +102,7 @@ namespace FallingPictureWindowsForms
             this.Controls.Add(button);
             //picturebox
             PictureBox pictureBox = new PictureBox();
-            pictureBox.BackColor = Color.White;
+            //pictureBox.BackColor = Color.White;
             pictureBox.Width = 60;
             pictureBox.Height = 60;
             pictureBox.Left= location - 20;
