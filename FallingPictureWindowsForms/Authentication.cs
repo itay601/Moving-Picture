@@ -1,22 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FallingPictureWindowsForms
 {
+    /// <summary>
+    /// Provides authentication functionality for the application.
+    /// </summary>
     public class Authentication
     {
-        public static bool CheckUserCredentials(string username, string password)
+        /// <summary>
+        /// Checks the user credentials against a predefined set.
+        /// </summary>
+        /// <param name="i_Username">The username to check.</param>
+        /// <param name="i_Password">The password to check.</param>
+        /// <returns>True if credentials are valid, false otherwise.</returns>
+        public static bool checkUserCredentials(string i_Username, string i_Password)
         {
-            //TODO
-            //future - implement check with Database
-            if(username == "kali" && password == "kali")
+            // TODO: Implement proper authentication with a secure database
+            const bool v_ValidCredentials = true;
+
+            if (i_Username == "kali" && i_Password == "kali")
             {
-                return true;
+                return v_ValidCredentials;
             }
-            return false;
+
+            return !v_ValidCredentials;
         }
     }
 }

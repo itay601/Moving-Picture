@@ -1,61 +1,65 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Drawing;
+
 namespace FallingPictureWindowsForms
 {
-    enum colorAA
-    {
-        Red,
-        Blue,
-        None,
-        // blue/red or white
-    }
+    /// <summary>
+    /// Represents a player in the Othello game.
+    /// </summary>
     public class Player
     {
-        private readonly string m_name;
-        private Color m_color;
-        private int m_score;
-        private char m_OXSymbole;
-        public bool m_isComputer;
+        private readonly string r_Name;
+        private readonly Color r_Color;
+        private int m_Score;
+        private readonly char r_XOSymbol;
+        public readonly bool r_IsComputer;
+
+        /// <summary>
+        /// Gets the name of the player.
+        /// </summary>
         public string Name
         {
-            get { return this.m_name; }
+            get { return this.r_Name; }
         }
-        public bool IsComputer
+
+        /// <summary>
+        /// Gets the symbol (X or O) used by the player.
+        /// </summary>
+        public char XOSymbol
         {
-            get { return this.IsComputer; }
+            get { return this.r_XOSymbol; }
         }
-        public char XOSymbole
-        {
-            get { return this.m_OXSymbole; }
-        }
+
+        /// <summary>
+        /// Gets or sets the score of the player.
+        /// </summary>
         public int Score
         {
-            get { return this.m_score; }
-            set { this.m_score = value; }
+            get { return this.m_Score; }
+            set { this.m_Score = value; }
         }
-        public Color color
+
+        /// <summary>
+        /// Gets the color assigned to the player.
+        /// </summary>
+        public Color Color
         {
-            get { return this.m_color; }
-            set { this.m_color = value; }
+            get { return this.r_Color; }
         }
-        public Player(string name, Color color, bool isComputer)
+
+        /// <summary>
+        /// Initializes a new instance of the Player class.
+        /// </summary>
+        /// <param name="i_Name">The name of the player.</param>
+        /// <param name="i_Color">The color assigned to the player.</param>
+        /// <param name="i_IsComputer">Indicates whether this player is controlled by the computer.</param>
+        public Player(string i_Name, Color i_Color, bool i_IsComputer)
         {
-            this.m_name = name;
-            this.m_color = color;
-            this.m_score = 0;
-            this.m_isComputer = isComputer;
-            if (m_color == Color.Red)
-            {
-                m_OXSymbole = 'X';
-            }
-            else
-            {
-                m_OXSymbole = 'O';
-            }
+            this.r_Name = i_Name;
+            this.r_Color = i_Color;
+            this.m_Score = 0;
+            this.r_IsComputer = i_IsComputer;
+            this.r_XOSymbol = (i_Color == Color.Black) ? 'X' : 'O';
         }
     }
 }
